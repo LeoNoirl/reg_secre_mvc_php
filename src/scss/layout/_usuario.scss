@@ -1,0 +1,51 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+
+
+.contenedor-inventario {
+    max-width: 180rem;
+    a{
+        @include m.tablet {
+            display: inline-block;
+            float: right;
+            margin: 2rem 0;
+        }
+ 
+    }
+    h1 {
+        text-align: center;
+        margin-top: 5rem;
+    }
+}
+
+table.propiedades {
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    margin-bottom: 5rem;
+
+    thead {
+        background-color: v.$rosa;
+
+        th {
+            color: v.$blanco;
+            padding: 2rem;
+        }
+    }
+
+    .imagen-tabla {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    tbody {
+        background-color: v.$grisOscuro;
+
+        td {
+            color: v.$blanco;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    }
+}
